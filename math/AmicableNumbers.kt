@@ -13,8 +13,8 @@ fun main(args: Array<String>) {
 
 fun Int.getFactors(): MutableList<Int> {
     val factors = mutableListOf<Int>()
-    if (this < 1)
-        return 0
+    if (this < 2)
+        return factors
     (1..this / 2)
         .filter { this % it == 0 }
         .forEach { factors.add(it) }
