@@ -14,7 +14,7 @@ fun main(args: Array<String>) {
 fun Int.getFactors(): MutableList<Int> {
     val factors = mutableListOf<Int>()
     if (this < 1)
-        return factors
+        return 0
     (1..this / 2)
         .filter { this % it == 0 }
         .forEach { factors.add(it) }
