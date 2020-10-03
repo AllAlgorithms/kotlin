@@ -4,8 +4,8 @@ import java.math.BigInteger
 https://en.wikipedia.org/wiki/Catalan_number
  */
 
-fun findFirst16(){
-    for (i in 0..15){
+fun findFirst100(){
+    for (i in 0..99){
         val number = catalanNumber(i)
         println("$number")
     }
